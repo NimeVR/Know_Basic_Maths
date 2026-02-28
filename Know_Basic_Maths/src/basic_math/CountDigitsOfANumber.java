@@ -6,11 +6,13 @@ public class CountDigitsOfANumber {
 		// TODO Auto-generated method stub
 		int n=12345,s=0;
 		int count=0;
+		if(n==0) {
+			count=1;
+		}else {
 		while(n>0) {
-			s=n%10;
 			count++;
-			n=n/10;
-		}
+			n/=10;
+		}}
 		System.out.println(count);
 	}
 
